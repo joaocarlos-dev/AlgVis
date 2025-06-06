@@ -5,25 +5,25 @@ import {AnimatePresence, motion} from 'framer-motion';
 const NavBar = () => {
   return (
     <div className="w-screen bg-gray-400 gap-20 rounded-bl-4xl rounded-br-4xl h-12 flex justify-center items-center">
-      <FlyoutLink href="#" FlyoutContent={PricingContent}>
+      <FlyoutLink FlyoutContent={SortsContent}>
         Sorts
       </FlyoutLink>
-      <FlyoutLink href="#" FlyoutContent={PricingContent}>
+      <FlyoutLink FlyoutContent={DPContent}>
         Dynamic Programming
       </FlyoutLink>
-      <FlyoutLink href="#" FlyoutContent={PricingContent}>
+      <FlyoutLink FlyoutContent={SearchsContent}>
         Searchs
       </FlyoutLink>
-      <FlyoutLink href="#" FlyoutContent={PricingContent}>
+      <FlyoutLink FlyoutContent={DivideConquerContent}>
         Divide and Conquer
       </FlyoutLink>
-      <FlyoutLink href="#" FlyoutContent={PricingContent}>
+      <FlyoutLink FlyoutContent={BacktrackingContent}>
         Backtracking
       </FlyoutLink>
-      <FlyoutLink href="#" FlyoutContent={PricingContent}>
+      <FlyoutLink FlyoutContent={GraphContent}>
         Graph
       </FlyoutLink>
-      <FlyoutLink href="#" FlyoutContent={PricingContent}>
+      <FlyoutLink FlyoutContent={GreedyContent}>
         Greedy
       </FlyoutLink>
     </div>
@@ -32,11 +32,10 @@ const NavBar = () => {
 
 interface FlyoutLinkProps {
   children: React.ReactNode;
-  href: string;
   FlyoutContent?: React.ComponentType;
 }
 
-const FlyoutLink = ({ children, href, FlyoutContent }: FlyoutLinkProps) => {
+const FlyoutLink = ({ children, FlyoutContent }: FlyoutLinkProps) => {
   const [open, setOpen] = useState(false);
   const showFlyout = open && FlyoutContent;
 
@@ -46,7 +45,7 @@ const FlyoutLink = ({ children, href, FlyoutContent }: FlyoutLinkProps) => {
       onMouseLeave={() => setOpen(false)}
       className="relative"
     >
-      <a className="relative text-zinc-800 text-[1.2rem]" href={href}>
+      <a className="relative text-zinc-800 text-[1.2rem] hover:cursor-pointer">
         {children}
         <span
         style={{transform: showFlyout ? "scaleX(1)" : "scaleX(0)",
@@ -75,13 +74,81 @@ const FlyoutLink = ({ children, href, FlyoutContent }: FlyoutLinkProps) => {
   );
 };
 
-const PricingContent = () => {
+const SortsContent = () => {
   return (
-    <div className="w-fit h-fit p-6 z-10 top-full mt-2">
-      {/* Conteúdo do flyout aqui */}
-
+    <div className="w-max h-fit p-6 top-full flex flex-col gap-2 items-start">
+      <a className="hover:cursor-pointer">Bubble Sort</a>
+      <a className="hover:cursor-pointer">Selection Sort</a>
+      <a className="hover:cursor-pointer">Insertion Sort</a>
+      <a className="hover:cursor-pointer">Merge Sort</a>
+      <a className="hover:cursor-pointer">Quick Sort</a>
+      <a className="hover:cursor-pointer">Heap Sort</a>
+      <a className="hover:cursor-pointer">Counting Sort</a>
+      <a className="hover:cursor-pointer">Shell Sort</a>
+      <a className="hover:cursor-pointer">Radix Sort</a>
+      <a className="hover:cursor-pointer">Bogo Sort</a>
     </div>
   );
+};
+
+const DPContent = () => {
+  return (
+    <div className="w-max h-fit p-6 z-10 top-full mt-2 flex flex-col gap-2">
+      <a className="hover:cursor-pointer">Fibonacci Sequence</a>
+      <a className="hover:cursor-pointer">Knapsack Problem</a>
+      <a className="hover:cursor-pointer">Subset Sum Problem</a>
+      <a className="hover:cursor-pointer">Longest Increasing Subsequence (LIS)</a>
+      <a className="hover:cursor-pointer">Longest Common Subsequence (LCS)</a>
+      <a className="hover:cursor-pointer">Palindrome Partitioning</a>
+      <a className="hover:cursor-pointer">Catalan Numbers</a>
+    </div>
+  );
+};
+
+
+const SearchsContent = () => {
+    return (
+      <div className="w-fit h-fit p-6 z-10 top-full mt-2">
+        <a className="hover:cursor-pointer">Teste</a>
+  
+      </div>
+    );
+};
+
+const DivideConquerContent = () => {
+    return (
+      <div className="w-fit h-fit p-6 z-10 top-full mt-2">
+        <a className="hover:cursor-pointer">Teste</a>
+  
+      </div>
+    );
+};
+
+const BacktrackingContent = () => {
+    return (
+      <div className="w-fit h-fit p-6 z-10 top-full mt-2">
+        <a className="hover:cursor-pointer">Teste</a>
+  
+      </div>
+    );
+};
+
+const GraphContent = () => {
+    return (
+      <div className="w-fit h-fit p-6 z-10 top-full mt-2">
+        <a className="hover:cursor-pointer">Teste</a>
+  
+      </div>
+    );
+};
+
+const GreedyContent = () => {
+    return (
+      <div className="w-fit h-fit p-6 z-10 top-full mt-2">
+        <a className="hover:cursor-pointer">Teste</a>
+  
+      </div>
+    );
 };
 
 export default NavBar;
