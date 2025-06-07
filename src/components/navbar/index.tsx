@@ -109,8 +109,13 @@ const DPContent = () => {
 const SearchsContent = () => {
     return (
       <div className="w-fit h-fit p-6 z-10 top-full mt-2">
-        <a className="hover:cursor-pointer">Teste</a>
-  
+        <a className="hover:cursor-pointer">Linear Search</a>
+        <a className="hover:cursor-pointer">Binary Search</a>
+        <a className="hover:cursor-pointer">Jump Search</a>
+        <a className="hover:cursor-pointer">Interpolation Search</a>
+        <a className="hover:cursor-pointer">Exponential Search</a>
+        <a className="hover:cursor-pointer">Ternary Search</a>
+        <a className="hover:cursor-pointer">Hashing</a>
       </div>
     );
 };
@@ -118,8 +123,11 @@ const SearchsContent = () => {
 const DivideConquerContent = () => {
     return (
       <div className="w-fit h-fit p-6 z-10 top-full mt-2">
-        <a className="hover:cursor-pointer">Teste</a>
-  
+        <a className="hover:cursor-pointer">Strassen Algorithm</a>
+        <a className="hover:cursor-pointer">Karatsuba Algorithm</a>
+        <a className="hover:cursor-pointer">Merge Sort</a>
+        <a className="hover:cursor-pointer">Quick Sort</a>
+        <a className="hover:cursor-pointer">Binary Search</a>
       </div>
     );
 };
@@ -127,8 +135,10 @@ const DivideConquerContent = () => {
 const BacktrackingContent = () => {
     return (
       <div className="w-fit h-fit p-6 z-10 top-full mt-2">
-        <a className="hover:cursor-pointer">Teste</a>
-  
+        <a className="hover:cursor-pointer">N-Queens Problem</a>
+        <a className="hover:cursor-pointer">Subset Sum Problem</a>
+        <a className="hover:cursor-pointer">Knight’s Tour Problem</a>
+        <a className="hover:cursor-pointer">Subset Sum Problem</a>
       </div>
     );
 };
@@ -136,8 +146,14 @@ const BacktrackingContent = () => {
 const GraphContent = () => {
     return (
       <div className="w-fit h-fit p-6 z-10 top-full mt-2">
-        <a className="hover:cursor-pointer">Teste</a>
-  
+        <a className="hover:cursor-pointer">Depth-First Search (DFS)</a>
+        <a className="hover:cursor-pointer">Breadth-First Search (BFS)</a>
+        <a className="hover:cursor-pointer">Dijkstra’s Algorithm</a>
+        <a className="hover:cursor-pointer">Bellman-Ford Algorithm</a>
+        <a className="hover:cursor-pointer">Floyd-Warshall Algorithm</a>
+        <a className="hover:cursor-pointer">A* Algorithm</a>
+        <a className="hover:cursor-pointer">Prim’s and Kruskal’s Algorithms</a>
+        <a className="hover:cursor-pointer">Topological Sorting</a>
       </div>
     );
 };
@@ -145,8 +161,11 @@ const GraphContent = () => {
 const GreedyContent = () => {
     return (
       <div className="w-fit h-fit p-6 z-10 top-full mt-2">
-        <a className="hover:cursor-pointer">Teste</a>
-  
+        <a className="hover:cursor-pointer">Activity Selection Problem</a>
+        <a className="hover:cursor-pointer">Prim’s Algorithm</a>
+        <a className="hover:cursor-pointer">Job Sequencing with Deadlines</a>
+        <a className="hover:cursor-pointer">Huffman Coding</a>
+        <a className="hover:cursor-pointer">Fractional Knapsack Problem</a>
       </div>
     );
 };
