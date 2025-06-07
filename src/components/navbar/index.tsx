@@ -93,7 +93,7 @@ const SortsContent = () => {
 
 const DPContent = () => {
   return (
-    <div className="w-max h-fit p-6 z-10 top-full mt-2 flex flex-col gap-2">
+    <div className="w-max h-fit p-6 z-10 top-full mt-2 flex flex-col gap-2 items-start">
       <a className="hover:cursor-pointer">Fibonacci Sequence</a>
       <a className="hover:cursor-pointer">Knapsack Problem</a>
       <a className="hover:cursor-pointer">Subset Sum Problem</a>
@@ -108,7 +108,7 @@ const DPContent = () => {
 
 const SearchsContent = () => {
     return (
-      <div className="w-fit h-fit p-6 z-10 top-full mt-2">
+      <div className="w-max h-fit p-6 z-10 top-full mt-2 flex flex-col gap-2 items-start">
         <a className="hover:cursor-pointer">Linear Search</a>
         <a className="hover:cursor-pointer">Binary Search</a>
         <a className="hover:cursor-pointer">Jump Search</a>
@@ -122,7 +122,7 @@ const SearchsContent = () => {
 
 const DivideConquerContent = () => {
     return (
-      <div className="w-fit h-fit p-6 z-10 top-full mt-2">
+      <div className="w-max h-fit p-6 z-10 top-full mt-2 flex flex-col gap-2 items-start">
         <a className="hover:cursor-pointer">Strassen Algorithm</a>
         <a className="hover:cursor-pointer">Karatsuba Algorithm</a>
         <a className="hover:cursor-pointer">Merge Sort</a>
@@ -134,7 +134,7 @@ const DivideConquerContent = () => {
 
 const BacktrackingContent = () => {
     return (
-      <div className="w-fit h-fit p-6 z-10 top-full mt-2">
+      <div className="w-max h-fit p-6 z-10 top-full mt-2 flex flex-col gap-2 items-start">
         <a className="hover:cursor-pointer">N-Queens Problem</a>
         <a className="hover:cursor-pointer">Subset Sum Problem</a>
         <a className="hover:cursor-pointer">Knight’s Tour Problem</a>
@@ -145,7 +145,7 @@ const BacktrackingContent = () => {
 
 const GraphContent = () => {
     return (
-      <div className="w-fit h-fit p-6 z-10 top-full mt-2">
+      <div className="w-max h-fit p-6 z-10 top-full mt-2 flex flex-col gap-2 items-start">
         <a className="hover:cursor-pointer">Depth-First Search (DFS)</a>
         <a className="hover:cursor-pointer">Breadth-First Search (BFS)</a>
         <a className="hover:cursor-pointer">Dijkstra’s Algorithm</a>
@@ -160,7 +160,7 @@ const GraphContent = () => {
 
 const GreedyContent = () => {
     return (
-      <div className="w-fit h-fit p-6 z-10 top-full mt-2">
+      <div className="w-fit h-fit p-6 z-10 top-full mt-2 flex flex-col gap-2 items-start">
         <a className="hover:cursor-pointer">Activity Selection Problem</a>
         <a className="hover:cursor-pointer">Prim’s Algorithm</a>
         <a className="hover:cursor-pointer">Job Sequencing with Deadlines</a>
