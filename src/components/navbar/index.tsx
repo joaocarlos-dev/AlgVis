@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import {AnimatePresence, motion} from 'framer-motion';
 
+import Link from 'next/link';
+
 const NavBar = () => {
   return (
     <div className="w-screen bg-gray-400 gap-20 rounded-bl-4xl rounded-br-4xl h-12 flex justify-center items-center">
@@ -77,7 +79,7 @@ const FlyoutLink = ({ children, FlyoutContent }: FlyoutLinkProps) => {
 const SortsContent = () => {
   return (
     <div className="w-max h-fit p-6 top-full flex flex-col gap-2 items-start">
-      <a className="hover:cursor-pointer">Bubble Sort</a>
+      <Link href="/sorts/bubble" className="hover:cursor-pointer">Bubble Sort</Link>
       <a className="hover:cursor-pointer">Selection Sort</a>
       <a className="hover:cursor-pointer">Insertion Sort</a>
       <a className="hover:cursor-pointer">Merge Sort</a>
