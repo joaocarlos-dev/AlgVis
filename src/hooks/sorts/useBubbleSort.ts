@@ -22,5 +22,5 @@ export function useBubbleSort() {
     setLoading(false);
   };
 
-  return { steps, sort, loading };
+  return { steps, sort, loading, setSteps };
 }
