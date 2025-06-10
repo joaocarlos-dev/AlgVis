@@ -13,7 +13,7 @@ export function useBogoSort() {
   const sort = async (input: number[]) => {
     setLoading(true);
     const res = await axios.post<SortStep[]>(
-      "https://alg-vis-algorithms.vercel.app//bogo-sort",
+      "https://alg-vis-algorithms.vercel.app/bogo-sort",
       {
         array: input,
       }

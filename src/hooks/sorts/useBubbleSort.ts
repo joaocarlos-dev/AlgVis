@@ -13,7 +13,7 @@ export function useBubbleSort() {
   const sort = async (input: number[]) => {
     setLoading(true);
     const res = await axios.post<SortStep[]>(
-      "https://alg-vis-algorithms.vercel.app//bubble-sort",
+      "https://alg-vis-algorithms.vercel.app/bubble-sort",
       {
         array: input,
       }
