@@ -88,7 +88,7 @@ const SortsContent = () => {
       <a className="hover:cursor-pointer">Counting Sort</a>
       <a className="hover:cursor-pointer">Shell Sort</a>
       <a className="hover:cursor-pointer">Radix Sort</a>
-      <a className="hover:cursor-pointer">Bogo Sort</a>
+      <Link href="/sorts/bogo" className="hover:cursor-pointer">Bogo Sort</Link>
     </div>
   );
 };
