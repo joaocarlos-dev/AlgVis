@@ -1,11 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
 
-interface SortStep {
-  array: number[];
-  compared: number[];
-}
-
 export function useSelectionSort() {
   const [steps, setSteps] = useState<SortStep[]>([]);
   const [loading, setLoading] = useState(false);
