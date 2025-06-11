@@ -8,7 +8,7 @@ export function useSelectionSort() {
   const sort = async (input: number[]) => {
     setLoading(true);
     const res = await axios.post<SortStep[]>(
-      "https://alg-vis-algorithms.vercel.app/selection-sort",
+      "https://alg-vis-algorithms.vercel.app/sorts/selection-sort",
       {
         array: input,
       }

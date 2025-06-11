@@ -83,7 +83,7 @@ const SortsContent = () => {
       <Link href="/sorts/selection" className="hover:cursor-pointer">Selection Sort</Link>
       <Link href="/sorts/insertion" className="hover:cursor-pointer">Insertion Sort</Link>
       <a className="hover:cursor-pointer">Merge Sort</a>
-      <a className="hover:cursor-pointer">Quick Sort</a>
+      <Link href="/sorts/quick" className="hover:cursor-pointer">Quick Sort</Link>
       <a className="hover:cursor-pointer">Heap Sort</a>
       <a className="hover:cursor-pointer">Counting Sort</a>
       <a className="hover:cursor-pointer">Shell Sort</a>
