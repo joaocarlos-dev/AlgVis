@@ -12,6 +12,13 @@ const generateRandomArray = (length: number, min: number, max: number): number[]
   );
 };
 
+function capitalizeFirstLetter(inputString: string): string {
+  if (inputString.length === 0) {
+    return ""; // Handle empty strings
+  }
+  return inputString.charAt(0).toUpperCase() + inputString.slice(1);
+}
+
 const SortVisualizer = () => {
   // Estados para configurações
   const [arrayLength, setArrayLength] = useState(10);
@@ -96,8 +103,10 @@ const SortVisualizer = () => {
   
 
   return (
-    <div className="flex flex-col items-center mt-10">
-      {/* Painel de Controles */}
+    <div className="flex flex-col items-center">
+      <div className="text-amber-50 text-5xl mb-5">
+        {capitalizeFirstLetter(pathname.split("/")[2])} Sort
+      </div>
       <div className="mb-8 p-4 bg-gray-100 rounded-lg grid grid-cols-2 gap-4 w-full max-w-md">
         <div>
           <label className="block text-sm font-medium mb-1">
@@ -106,7 +115,7 @@ const SortVisualizer = () => {
           <input
             type="range"
             min="5"
-            max="100"
+            max="50"
             value={arrayLength}
             onChange={(e) => setArrayLength(Number(e.target.value))}
             className="w-full"
@@ -120,7 +129,7 @@ const SortVisualizer = () => {
           <input
             type="range"
             min="5"
-            max="200"
+            max="100"
             value={speed}
             onChange={(e) => setSpeed(Number(e.target.value))}
             className="w-full"
@@ -160,6 +169,8 @@ const SortVisualizer = () => {
           Randomize numbers
         </button>
 
+        
+
         <button
           onClick={handleStartSort}
           className={`mb-4 px-4 py-2 text-white rounded border-1 border-amber-50 transition ${
@@ -168,9 +179,17 @@ const SortVisualizer = () => {
         >
           {isSorting ? "Restart Sort" : "Start Sort"}
         </button>
+        <button
+          onClick={() => {setIsSorting(false)}}
+          className="mb-4 bg-color-background px-4 py-2 text-white rounded border-1 hover:bg-red-700 border-amber-50"
+        >
+          Stop Sorting
+        </button>
       </div>
 
-      <div className="flex gap-2 flex-wrap justify-center">
+        
+
+      <div className="flex gap-2 flex-wrap justify-center m-5">
         {(steps.length > 0 ? steps[currentStep].array : input).map((value, index) => (
           <motion.div
             key={index}
@@ -187,7 +206,9 @@ const SortVisualizer = () => {
           </motion.div>
         ))}
       </div>
+      
     </div>
+    
   );
 };
 

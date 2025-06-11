@@ -80,7 +80,7 @@ const SortsContent = () => {
   return (
     <div className="w-max h-fit p-6 top-full flex flex-col gap-2 items-start">
       <Link href="/sorts/bubble" className="hover:cursor-pointer">Bubble Sort</Link>
-      <a className="hover:cursor-pointer">Selection Sort</a>
+      <Link href="/sorts/selection" className="hover:cursor-pointer">Selection Sort</Link>
       <a className="hover:cursor-pointer">Insertion Sort</a>
       <a className="hover:cursor-pointer">Merge Sort</a>
       <a className="hover:cursor-pointer">Quick Sort</a>
