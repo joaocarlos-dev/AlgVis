@@ -26,7 +26,7 @@ O **AlgVis** é uma plataforma educacional interativa que visa tornar o aprendiz
 ### Backend
 
 - Python
-- astAPI
+- FastAPI
 
 ## Repositório de Algoritmos
 
